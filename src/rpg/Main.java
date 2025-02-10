@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Hero h = new Hero("HERO", 100, 50, 5, 3);
+        Sword s = new Sword();
+        s.name = "短剣";
+        s.damage = 10;
+        h.sword = s;
+        System.out.println("現在の武器は" + h.sword.name);
 
         Matango ma = new Matango("MatangoA", 20, 5, 3);
         Matango mb = new Matango("MatangoB", 30, 6, 4);

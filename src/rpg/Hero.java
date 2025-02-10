@@ -9,6 +9,7 @@ public class Hero {
     public int offense;
     public int defense;
     final int level = 10;
+    public Sword sword;
 
     public Hero() {
 
@@ -18,16 +19,16 @@ public class Hero {
         this.name = name;
         this.hp = hp;
         this.mp = mp;
-        this.offense =offense;
-        this.defense =defense;
+        this.offense = offense;
+        this.defense = defense;
     }
 
     public void attack(Matango opponent) {
         int damage = this.offense - opponent.defense;
-        if(damage>0) {
-            opponent.hp = opponent.hp-damage;
-            System.out.println(this.name + "は" + opponent.name + "に" +damage + "のダメージを与えた！");
-        }else {
+        if (damage > 0) {
+            opponent.hp = opponent.hp - damage;
+            System.out.println(this.name + "は" + opponent.name + "に" + damage + "のダメージを与えた！");
+        } else {
             System.out.println("miss!" + this.name + "は" + opponent.name + "にダメージを与えられなかった");
         }
     }
@@ -45,7 +46,7 @@ public class Hero {
 
     public void selfAid() {
         System.out.println(this.name + "はセルフエイドを唱えた！");
-        this.mp -=5;
+        this.mp -= 5;
         this.hp = MAX_HP;
         System.out.println("HPが最大まで回復した");
     }
@@ -55,7 +56,7 @@ public class Hero {
         int recover = new java.util.Random().nextInt(3) + sec;
 
         //小さいほうの値を選択して最大MPを超えないようにする
-        int recoverActual = Math.min(this.MAX_MP - this.mp,  recover);
+        int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
 
         this.mp += recoverActual;
         System.out.println("MPが" + recoverActual + "回復した");
