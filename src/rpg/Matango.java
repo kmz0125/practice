@@ -32,7 +32,7 @@ public class Matango {
     public void gas(Hero opponent) {
         System.out.println("お化けキノコ" + this.name + "は毒ガスをだした！");
         opponent.hp =-2;
-        System.out.println("2のダメージ！");
+        System.out.println(opponent.name + "に2のダメージ！");
 
     }
 
