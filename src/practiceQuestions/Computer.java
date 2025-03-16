@@ -1,6 +1,6 @@
 package practiceQuestions;
 
-public class Computer {
+public class Computer extends TangibleAsset{
     String name;
     int price;
     String color;
