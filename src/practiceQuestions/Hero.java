@@ -1,6 +1,6 @@
 package practiceQuestions;
 
-import rpg.Matango;
+import rpgBasic.Matango;
 
 public class Hero {
     private String name = "HERO1";

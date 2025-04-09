@@ -1,6 +1,6 @@
 package practiceQuestions;
 
-import rpg.Hero;
+import rpgBasic.Hero;
 
 public class Matango {
     int hp = 50;

@@ -1,6 +1,6 @@
 package practiceQuestions;
 
-import rpg.Hero;
+import rpgBasic.Hero;
 
 public class PoisonMatango extends Matango {
     int poisonCount = 5;
